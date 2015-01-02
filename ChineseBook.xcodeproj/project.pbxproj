@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		359534501A4F4BCA0020D01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595344F1A4F4BCA0020D01E /* AppDelegate.swift */; };
+		359534521A4F4BCA0020D01E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 359534511A4F4BCA0020D01E /* GameScene.sks */; };
+		359534561A4F4BCA0020D01E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534551A4F4BCA0020D01E /* GameViewController.swift */; };
+		359534591A4F4BCA0020D01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359534571A4F4BCA0020D01E /* Main.storyboard */; };
+		3595345B1A4F4BCA0020D01E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3595345A1A4F4BCA0020D01E /* Images.xcassets */; };
+		3595345E1A4F4BCA0020D01E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3595345C1A4F4BCA0020D01E /* LaunchScreen.xib */; };
+		3595346A1A4F4BCA0020D01E /* ChineseBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534691A4F4BCA0020D01E /* ChineseBookTests.swift */; };
+		359534741A4F4BD70020D01E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359534731A4F4BD70020D01E /* SpriteKit.framework */; };
+		359534761A4F4DEF0020D01E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534751A4F4DEF0020D01E /* GameScene.swift */; };
+		359534B11A4F613D0020D01E /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534B01A4F613D0020D01E /* MenuScene.swift */; };
+		35BC8DAE1A4FC61A00F72F7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */; };
+		4E7400E61A5669BB008944C2 /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7400E51A5669BB008944C2 /* backbutton.png */; };
+		4E7400E81A566ED6008944C2 /* apple.png in Resources */ = {isa = PBXBuildFile; fileRef = 4E7400E71A566ED6008944C2 /* apple.png */; };
+		4E85C20F1A56666900669279 /* ping2guo3.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 4E85C20E1A56666900669279 /* ping2guo3.mp3 */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		359534641A4F4BCA0020D01E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 359534421A4F4BCA0020D01E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 359534491A4F4BCA0020D01E;
+			remoteInfo = ChineseBook;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		3595344A1A4F4BCA0020D01E /* ChineseBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3595344E1A4F4BCA0020D01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3595344F1A4F4BCA0020D01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		359534511A4F4BCA0020D01E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
+		359534551A4F4BCA0020D01E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
+		359534581A4F4BCA0020D01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3595345A1A4F4BCA0020D01E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		3595345D1A4F4BCA0020D01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		359534631A4F4BCA0020D01E /* ChineseBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		359534681A4F4BCA0020D01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		359534691A4F4BCA0020D01E /* ChineseBookTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChineseBookTests.swift; sourceTree = "<group>"; };
+		359534731A4F4BD70020D01E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
+		359534751A4F4DEF0020D01E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
+		359534B01A4F613D0020D01E /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		4E7400E51A5669BB008944C2 /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = SOURCE_ROOT; };
+		4E7400E71A566ED6008944C2 /* apple.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple.png; sourceTree = SOURCE_ROOT; };
+		4E85C20E1A56666900669279 /* ping2guo3.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ping2guo3.mp3; sourceTree = SOURCE_ROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		359534471A4F4BCA0020D01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				35BC8DAE1A4FC61A00F72F7B /* AVFoundation.framework in Frameworks */,
+				359534741A4F4BD70020D01E /* SpriteKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359534601A4F4BCA0020D01E /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		359534411A4F4BCA0020D01E = {
+			isa = PBXGroup;
+			children = (
+				35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */,
+				359534731A4F4BD70020D01E /* SpriteKit.framework */,
+				3595344C1A4F4BCA0020D01E /* ChineseBook */,
+				359534661A4F4BCA0020D01E /* ChineseBookTests */,
+				3595344B1A4F4BCA0020D01E /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		3595344B1A4F4BCA0020D01E /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3595344A1A4F4BCA0020D01E /* ChineseBook.app */,
+				359534631A4F4BCA0020D01E /* ChineseBookTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3595344C1A4F4BCA0020D01E /* ChineseBook */ = {
+			isa = PBXGroup;
+			children = (
+				359534A91A4F55620020D01E /* Images */,
+				35BC8DAC1A4FAE9B00F72F7B /* Sound */,
+				3595344F1A4F4BCA0020D01E /* AppDelegate.swift */,
+				359534B01A4F613D0020D01E /* MenuScene.swift */,
+				359534511A4F4BCA0020D01E /* GameScene.sks */,
+				359534551A4F4BCA0020D01E /* GameViewController.swift */,
+				359534751A4F4DEF0020D01E /* GameScene.swift */,
+				359534571A4F4BCA0020D01E /* Main.storyboard */,
+				3595345A1A4F4BCA0020D01E /* Images.xcassets */,
+				3595345C1A4F4BCA0020D01E /* LaunchScreen.xib */,
+				3595344D1A4F4BCA0020D01E /* Supporting Files */,
+			);
+			path = ChineseBook;
+			sourceTree = "<group>";
+		};
+		3595344D1A4F4BCA0020D01E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3595344E1A4F4BCA0020D01E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		359534661A4F4BCA0020D01E /* ChineseBookTests */ = {
+			isa = PBXGroup;
+			children = (
+				359534691A4F4BCA0020D01E /* ChineseBookTests.swift */,
+				359534671A4F4BCA0020D01E /* Supporting Files */,
+			);
+			path = ChineseBookTests;
+			sourceTree = "<group>";
+		};
+		359534671A4F4BCA0020D01E /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				359534681A4F4BCA0020D01E /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		359534A91A4F55620020D01E /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				4E7400E71A566ED6008944C2 /* apple.png */,
+				4E7400E51A5669BB008944C2 /* backbutton.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		35BC8DAC1A4FAE9B00F72F7B /* Sound */ = {
+			isa = PBXGroup;
+			children = (
+				4E85C20E1A56666900669279 /* ping2guo3.mp3 */,
+			);
+			name = Sound;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		359534491A4F4BCA0020D01E /* ChineseBook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3595346D1A4F4BCA0020D01E /* Build configuration list for PBXNativeTarget "ChineseBook" */;
+			buildPhases = (
+				359534461A4F4BCA0020D01E /* Sources */,
+				359534471A4F4BCA0020D01E /* Frameworks */,
+				359534481A4F4BCA0020D01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ChineseBook;
+			productName = ChineseBook;
+			productReference = 3595344A1A4F4BCA0020D01E /* ChineseBook.app */;
+			productType = "com.apple.product-type.application";
+		};
+		359534621A4F4BCA0020D01E /* ChineseBookTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 359534701A4F4BCA0020D01E /* Build configuration list for PBXNativeTarget "ChineseBookTests" */;
+			buildPhases = (
+				3595345F1A4F4BCA0020D01E /* Sources */,
+				359534601A4F4BCA0020D01E /* Frameworks */,
+				359534611A4F4BCA0020D01E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				359534651A4F4BCA0020D01E /* PBXTargetDependency */,
+			);
+			name = ChineseBookTests;
+			productName = ChineseBookTests;
+			productReference = 359534631A4F4BCA0020D01E /* ChineseBookTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		359534421A4F4BCA0020D01E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0610;
+				ORGANIZATIONNAME = "Chang, Eric";
+				TargetAttributes = {
+					359534491A4F4BCA0020D01E = {
+						CreatedOnToolsVersion = 6.1;
+					};
+					359534621A4F4BCA0020D01E = {
+						CreatedOnToolsVersion = 6.1;
+						TestTargetID = 359534491A4F4BCA0020D01E;
+					};
+				};
+			};
+			buildConfigurationList = 359534451A4F4BCA0020D01E /* Build configuration list for PBXProject "ChineseBook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 359534411A4F4BCA0020D01E;
+			productRefGroup = 3595344B1A4F4BCA0020D01E /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				359534491A4F4BCA0020D01E /* ChineseBook */,
+				359534621A4F4BCA0020D01E /* ChineseBookTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		359534481A4F4BCA0020D01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3595345E1A4F4BCA0020D01E /* LaunchScreen.xib in Resources */,
+				4E85C20F1A56666900669279 /* ping2guo3.mp3 in Resources */,
+				3595345B1A4F4BCA0020D01E /* Images.xcassets in Resources */,
+				4E7400E81A566ED6008944C2 /* apple.png in Resources */,
+				4E7400E61A5669BB008944C2 /* backbutton.png in Resources */,
+				359534521A4F4BCA0020D01E /* GameScene.sks in Resources */,
+				359534591A4F4BCA0020D01E /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		359534611A4F4BCA0020D01E /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		359534461A4F4BCA0020D01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				359534761A4F4DEF0020D01E /* GameScene.swift in Sources */,
+				359534B11A4F613D0020D01E /* MenuScene.swift in Sources */,
+				359534561A4F4BCA0020D01E /* GameViewController.swift in Sources */,
+				359534501A4F4BCA0020D01E /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3595345F1A4F4BCA0020D01E /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3595346A1A4F4BCA0020D01E /* ChineseBookTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		359534651A4F4BCA0020D01E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 359534491A4F4BCA0020D01E /* ChineseBook */;
+			targetProxy = 359534641A4F4BCA0020D01E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		359534571A4F4BCA0020D01E /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				359534581A4F4BCA0020D01E /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3595345C1A4F4BCA0020D01E /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3595345D1A4F4BCA0020D01E /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3595346B1A4F4BCA0020D01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3595346C1A4F4BCA0020D01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3595346E1A4F4BCA0020D01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChineseBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		3595346F1A4F4BCA0020D01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ChineseBook/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		359534711A4F4BCA0020D01E /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChineseBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChineseBook.app/ChineseBook";
+			};
+			name = Debug;
+		};
+		359534721A4F4BCA0020D01E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ChineseBookTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ChineseBook.app/ChineseBook";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		359534451A4F4BCA0020D01E /* Build configuration list for PBXProject "ChineseBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3595346B1A4F4BCA0020D01E /* Debug */,
+				3595346C1A4F4BCA0020D01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3595346D1A4F4BCA0020D01E /* Build configuration list for PBXNativeTarget "ChineseBook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3595346E1A4F4BCA0020D01E /* Debug */,
+				3595346F1A4F4BCA0020D01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		359534701A4F4BCA0020D01E /* Build configuration list for PBXNativeTarget "ChineseBookTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				359534711A4F4BCA0020D01E /* Debug */,
+				359534721A4F4BCA0020D01E /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 359534421A4F4BCA0020D01E /* Project object */;
+}
