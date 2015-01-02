@@ -20,29 +20,34 @@ class GameScene: SKScene {
             
             self.backgroundColor = UIColor.whiteColor()
             
-            backButton.position = CGPoint(x: self.size.width * 0.1, y: self.size.height * 0.1)
+            backButton.position = CGPoint(x: self.size.width * 0.1, y: self.size.height * 0.15)
             backButton.alpha = 1.0//optional
             self.addChild(backButton)
             
             self.scaleMode = .AspectFill
-            spriteNode.position = CGPoint(x: size.width / 2.0,y: size.height / 2.0)
             let letterLabel = SKLabelNode(text: "A")
             letterLabel.fontColor = UIColor.redColor()
-            letterLabel.fontSize = 100
-            letterLabel.position = CGPoint(x: size.width * 0.20, y: size.height * 0.7)
-            letterLabel.fontName = "AppleSDGothicNeo-Bold"
+            letterLabel.fontSize = 200
+            letterLabel.position = CGPoint(x: size.width * 0.20, y: size.height * 0.6)
+            letterLabel.fontName = "Georgia-Bold"
             self.addChild(letterLabel)
             
-            let englishLabel = SKLabelNode(text: "Apple")
+            let englishLabel = SKLabelNode(text: "Apple  苹果")
             englishLabel.fontColor = UIColor.redColor()
-            englishLabel.position = CGPoint(x: size.width / 4.0, y: size.height / 10)
-            englishLabel.fontName = "AppleSDGothicNeo-Bold"
+            englishLabel.fontSize = 20
+            englishLabel.position = CGPoint(x: size.width * 0.70, y: size.height * 0.1)
+            englishLabel.fontName = "Georgia-Bold"
             self.addChild(englishLabel)
             
+            /*
             let label = SKLabelNode(text: "苹果")
             label.fontColor = UIColor.redColor()
-            label.position = CGPoint(x: size.width * 0.80, y: size.height / 10)
+            label.fontSize = 30
+            label.position = CGPoint(x: size.width * 0.80, y: size.height * 0.1)
             self.addChild(label)
+            */
+            
+            spriteNode.position = CGPoint(x: size.width * 0.70,y: size.height * 0.6)
             self.addChild(spriteNode)
             
             let scaleAction = SKAction.scaleTo(2.0, duration: 0.5)
