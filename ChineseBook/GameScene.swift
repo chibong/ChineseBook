@@ -10,50 +10,57 @@ import Spritekit
 import AVFoundation
 
 class GameScene: SKScene {
+        let textureAtlas = SKTextureAtlas(named:"appleAnim.atlas")
+        var spriteArray = Array<SKTexture>()
+        var apple: SKSpriteNode!
+        var appleBite: SKAction!
+    
+        let letterLabel = SKLabelNode(text: "A")
+        let chineseLabel = SKLabelNode(text: "苹果")
+        let englishLabel = SKLabelNode(text: "Apple")
+
         var buttonSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ping2guo3", ofType: "mp3")!)
         var audioPlayer = AVAudioPlayer()
         var button: SKNode! = nil
-        let spriteNode = SKSpriteNode(imageNamed: "apple")
+        var spriteNode = SKSpriteNode()
         var backButton = SKSpriteNode(imageNamed: "backbutton.png")
-    
         override func didMoveToView(view: SKView) {
             
             self.backgroundColor = UIColor.whiteColor()
+            setupApple()
             
-            backButton.position = CGPoint(x: self.size.width * 0.1, y: self.size.height * 0.15)
+            backButton.position = CGPoint(x: self.size.width * 0.2, y: self.size.height * 0.15)
             backButton.alpha = 1.0//optional
             self.addChild(backButton)
             
             self.scaleMode = .AspectFill
-            let letterLabel = SKLabelNode(text: "A")
+            
             letterLabel.fontColor = UIColor.redColor()
             letterLabel.fontSize = 200
             letterLabel.position = CGPoint(x: size.width * 0.20, y: size.height * 0.6)
             letterLabel.fontName = "Georgia-Bold"
             self.addChild(letterLabel)
             
-            let englishLabel = SKLabelNode(text: "Apple  苹果")
             englishLabel.fontColor = UIColor.redColor()
-            englishLabel.fontSize = 20
-            englishLabel.position = CGPoint(x: size.width * 0.70, y: size.height * 0.1)
+            englishLabel.fontSize = 40
+            englishLabel.position = CGPoint(x: size.width * 0.70, y: size.height * 0.4)
             englishLabel.fontName = "Georgia-Bold"
             self.addChild(englishLabel)
             
+            chineseLabel.fontColor = UIColor.redColor()
+            chineseLabel.fontSize = 40
+            chineseLabel.position = CGPoint(x: size.width * 0.80, y: size.height * 0.4)
+            chineseLabel.fontName = "Georgia-Bold"
+            self.addChild(chineseLabel)
+            
             /*
-            let label = SKLabelNode(text: "苹果")
-            label.fontColor = UIColor.redColor()
-            label.fontSize = 30
-            label.position = CGPoint(x: size.width * 0.80, y: size.height * 0.1)
+
+            chineseLabel.fontColor = UIColor.redColor()
+            chineseLabel.fontSize = 30
+            chineseLabel.position = CGPoint(x: size.width * 0.80, y: size.height * 0.1)
             self.addChild(label)
             */
-            
-            spriteNode.position = CGPoint(x: size.width * 0.70,y: size.height * 0.6)
-            self.addChild(spriteNode)
-            
-            let scaleAction = SKAction.scaleTo(2.0, duration: 0.5)
-            let moveBackAction = scaleAction.reversedAction()
-            let scaleThenReverse = SKAction.sequence([scaleAction, moveBackAction])
-            englishLabel.runAction(scaleThenReverse)
+    
             
             audioPlayer = AVAudioPlayer(contentsOfURL: buttonSound, error: nil)
             audioPlayer.prepareToPlay()
@@ -63,83 +70,53 @@ class GameScene: SKScene {
     override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
         // Loop over all the touches in this event
         let menu = MenuScene(size: self.size)
+        //let animateAction = SKAction.animateWithTextures(self.spriteArray, timePerFrame: 0.20);
+
+        let scaleAction = SKAction.scaleTo(2.0, duration: 0.5)
+        let shrinkAction = SKAction.scaleTo(1.0, duration: 0.5)
+        let scaleThenReverse = SKAction.sequence([scaleAction, shrinkAction])
         
         for touch: AnyObject in touches {
             // Get the location of the touch in this scene
             let location = touch.locationInNode(self)
             // Check if the location of the touch is within the button's bounds
-            if spriteNode.containsPoint(location) {
-                println("tapped!")
+            if apple.containsPoint(location) {
+                apple.runAction(appleBite)
+                println("you bit me!")
                 audioPlayer.play()
+                println("tapped!")
+
             }
             if backButton.containsPoint(location){
                 println("Going Back!")
                 let transition = SKTransition.moveInWithDirection(SKTransitionDirection.Left, duration: 0.5)
                 self.view?.presentScene(menu, transition: transition)
             }
+            if englishLabel.containsPoint(location){
+                englishLabel.runAction(scaleThenReverse)
+            }
+            if letterLabel.containsPoint(location){
+                letterLabel.runAction(scaleThenReverse)
+            }
+            if chineseLabel.containsPoint(location){
+                chineseLabel.runAction(scaleThenReverse)
+            }
         }
+    }
+    func setupApple(){
+        apple = SKSpriteNode(imageNamed: "apple1.png")
+        apple.position = CGPoint(x: size.width * 0.70,y: size.height * 0.6)
+        self.addChild(apple)
+        let atlas = SKTextureAtlas(named: "apple")
+        let anim = SKAction.animateWithTextures([
+            atlas.textureNamed("apple1"),
+            atlas.textureNamed("apple2")
+            ], timePerFrame: 0.5)
+        appleBite = SKAction.repeatAction(anim, count:1)
+
+        
     }
     
     
     
 }
-
-        /*
-
-
-var button: SKNode! = nil
-
-override func didMoveToView(view: SKView) {
-// Create a simple red rectangle that's 100x44
-button = SKSpriteNode(color: SKColor.redColor(), size: CGSize(width: 100, height: 44))
-// Put it in the center of the scene
-button.position = CGPoint(x:CGRectGetMidX(self.frame), y:CGRectGetMidY(self.frame));
-
-self.addChild(button)
-}
-
-override func touchesEnded(touches: NSSet, withEvent event: UIEvent) {
-// Loop over all the touches in this event
-for touch: AnyObject in touches {
-// Get the location of the touch in this scene
-let location = touch.locationInNode(self)
-// Check if the location of the touch is within the button's bounds
-if button.containsPoint(location) {
-println("tapped!")
-}
-}
-}
-
-
-            let filePath:NSURL = NSURL(fileURLWithPath:"/Users/ericc418/projects/Chinese App/Chinese App/ping2guo3.mp3")!
-            var er:NSError?
-            let audioPlayer:AVAudioPlayer = AVAudioPlayer(contentsOfURL: filePath, error: &er)
-            println("playing...")
-            audioPlayer.play()
-            
-        var error:NSError?
-        
-        let soundFileURL = NSBundle.mainBundle().URLForResource("ping2guo3",withExtension: "mp3")
-        let audioPlayer = AVAudioPlayer(contentsOfURL: soundFileURL, error: &error)
-        audioPlayer.play()
-        println("Sound played")
-
-            /*
-            var alertSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ping2guo3", ofType: "mp3")!)
-            println(alertSound)
-            
-            // Removed deprecated use of AVAudioSessionDelegate protocol
-            AVAudioSession.sharedInstance().setCategory(AVAudioSessionCategoryPlayback, error: nil)
-            AVAudioSession.sharedInstance().setActive(true, error: nil)
-            
-            var audioPlayer = AVAudioPlayer()
-            audioPlayer = AVAudioPlayer(contentsOfURL: alertSound, error: &error)
-            audioPlayer.prepareToPlay()
-            audioPlayer.play()
-            println("Sound played")
-            */
-         */
-            
-            
- 
-
