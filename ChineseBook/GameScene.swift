@@ -18,12 +18,20 @@ class GameScene: SKScene {
         let letterLabel = SKLabelNode(text: "A")
         let chineseLabel = SKLabelNode(text: "苹果")
         let englishLabel = SKLabelNode(text: "Apple")
+    
+        let chineseLabel2 = SKLabelNode(text: "飛機")
+        let englishLabel2 = SKLabelNode(text: "Airplane")
 
         var buttonSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ping2guo3", ofType: "mp3")!)
+        var biteSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("appleBite", ofType: "mp3")!)
         var audioPlayer = AVAudioPlayer()
+        var bitePlayer = AVAudioPlayer()
         var button: SKNode! = nil
+    
         var spriteNode = SKSpriteNode()
         var backButton = SKSpriteNode(imageNamed: "backbutton.png")
+        var fwdButton = SKSpriteNode(imageNamed: "forwardbutton1.png")
+    
         override func didMoveToView(view: SKView) {
             
             self.backgroundColor = UIColor.whiteColor()
@@ -33,37 +41,36 @@ class GameScene: SKScene {
             backButton.alpha = 1.0//optional
             self.addChild(backButton)
             
+            fwdButton.position = CGPoint(x: self.size.width * 0.8, y: self.size.height * 0.15)
+            fwdButton.alpha = 1.0//optional
+            self.addChild(fwdButton)
+            
             self.scaleMode = .AspectFill
             
             letterLabel.fontColor = UIColor.redColor()
-            letterLabel.fontSize = 200
+            letterLabel.fontSize = 260
             letterLabel.position = CGPoint(x: size.width * 0.20, y: size.height * 0.6)
-            letterLabel.fontName = "Georgia-Bold"
+            letterLabel.fontName = "AmericanTypewriter"
             self.addChild(letterLabel)
             
             englishLabel.fontColor = UIColor.redColor()
             englishLabel.fontSize = 40
-            englishLabel.position = CGPoint(x: size.width * 0.70, y: size.height * 0.4)
-            englishLabel.fontName = "Georgia-Bold"
+            englishLabel.position = CGPoint(x: size.width * 0.625, y: size.height * 0.4)
+            englishLabel.fontName = "AmericanTypewriter"
             self.addChild(englishLabel)
             
             chineseLabel.fontColor = UIColor.redColor()
             chineseLabel.fontSize = 40
-            chineseLabel.position = CGPoint(x: size.width * 0.80, y: size.height * 0.4)
-            chineseLabel.fontName = "Georgia-Bold"
+            chineseLabel.position = CGPoint(x: size.width * 0.775, y: size.height * 0.4)
+            chineseLabel.fontName = "AmericanTypewriter"
             self.addChild(chineseLabel)
             
-            /*
 
-            chineseLabel.fontColor = UIColor.redColor()
-            chineseLabel.fontSize = 30
-            chineseLabel.position = CGPoint(x: size.width * 0.80, y: size.height * 0.1)
-            self.addChild(label)
-            */
-    
             
             audioPlayer = AVAudioPlayer(contentsOfURL: buttonSound, error: nil)
             audioPlayer.prepareToPlay()
+            bitePlayer = AVAudioPlayer(contentsOfURL: biteSound, error: nil)
+            bitePlayer.prepareToPlay()
             
         }
     
@@ -82,8 +89,8 @@ class GameScene: SKScene {
             // Check if the location of the touch is within the button's bounds
             if apple.containsPoint(location) {
                 apple.runAction(appleBite)
+                bitePlayer.play()
                 println("you bit me!")
-                audioPlayer.play()
                 println("tapped!")
 
             }
@@ -100,12 +107,13 @@ class GameScene: SKScene {
             }
             if chineseLabel.containsPoint(location){
                 chineseLabel.runAction(scaleThenReverse)
+                audioPlayer.play()
             }
         }
     }
     func setupApple(){
         apple = SKSpriteNode(imageNamed: "apple1.png")
-        apple.position = CGPoint(x: size.width * 0.70,y: size.height * 0.6)
+        apple.position = CGPoint(x: size.width * 0.70,y: size.height * 0.75)
         self.addChild(apple)
         let atlas = SKTextureAtlas(named: "apple")
         let anim = SKAction.animateWithTextures([
@@ -116,7 +124,6 @@ class GameScene: SKScene {
 
         
     }
-    
     
     
 }

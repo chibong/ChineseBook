@@ -9,16 +9,21 @@
 /* Begin PBXBuildFile section */
 		355658F51A57BDB50070170E /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 355658F31A57BDB50070170E /* backbutton.png */; };
 		355658F61A57BDB50070170E /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355658F41A57BDB50070170E /* backbutton@2x.png */; };
+		355E7D6A1A64F4E700F60BDD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355E7D691A64F4E700F60BDD /* Images-2.xcassets */; };
 		359534501A4F4BCA0020D01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595344F1A4F4BCA0020D01E /* AppDelegate.swift */; };
 		359534521A4F4BCA0020D01E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 359534511A4F4BCA0020D01E /* GameScene.sks */; };
 		359534561A4F4BCA0020D01E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534551A4F4BCA0020D01E /* GameViewController.swift */; };
 		359534591A4F4BCA0020D01E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 359534571A4F4BCA0020D01E /* Main.storyboard */; };
-		3595345B1A4F4BCA0020D01E /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3595345A1A4F4BCA0020D01E /* Images.xcassets */; };
 		3595345E1A4F4BCA0020D01E /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3595345C1A4F4BCA0020D01E /* LaunchScreen.xib */; };
 		3595346A1A4F4BCA0020D01E /* ChineseBookTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534691A4F4BCA0020D01E /* ChineseBookTests.swift */; };
 		359534741A4F4BD70020D01E /* SpriteKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 359534731A4F4BD70020D01E /* SpriteKit.framework */; };
 		359534761A4F4DEF0020D01E /* GameScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534751A4F4DEF0020D01E /* GameScene.swift */; };
 		359534B11A4F613D0020D01E /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534B01A4F613D0020D01E /* MenuScene.swift */; };
+		35B36FDC1A6DB2FF0093BBB8 /* appleBite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */; };
+		35B36FDE1A6DBAF90093BBB8 /* App Icon [Squared] in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FDD1A6DBAF90093BBB8 /* App Icon [Squared] */; };
+		35B36FE01A6DFC880093BBB8 /* apple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FDF1A6DFC880093BBB8 /* apple.mp3 */; };
+		35B36FE21A6DFF010093BBB8 /* bScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B36FE11A6DFF010093BBB8 /* bScene.swift */; };
+		35B36FE61A6E09430093BBB8 /* forwardbutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FE51A6E09430093BBB8 /* forwardbutton1.png */; };
 		35BC8DAE1A4FC61A00F72F7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */; };
 		35C43FA91A5CF4DB009ED66B /* apple1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C43FA81A5CF4DB009ED66B /* apple1.png */; };
 		35C43FAB1A5CF7C2009ED66B /* apple.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 35C43FAA1A5CF7C1009ED66B /* apple.atlas */; };
@@ -38,13 +43,13 @@
 /* Begin PBXFileReference section */
 		355658F31A57BDB50070170E /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = SOURCE_ROOT; };
 		355658F41A57BDB50070170E /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = SOURCE_ROOT; };
+		355E7D691A64F4E700F60BDD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
 		3595344A1A4F4BCA0020D01E /* ChineseBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3595344E1A4F4BCA0020D01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3595344F1A4F4BCA0020D01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		359534511A4F4BCA0020D01E /* GameScene.sks */ = {isa = PBXFileReference; lastKnownFileType = file.sks; path = GameScene.sks; sourceTree = "<group>"; };
 		359534551A4F4BCA0020D01E /* GameViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GameViewController.swift; sourceTree = "<group>"; };
 		359534581A4F4BCA0020D01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		3595345A1A4F4BCA0020D01E /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		3595345D1A4F4BCA0020D01E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		359534631A4F4BCA0020D01E /* ChineseBookTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ChineseBookTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		359534681A4F4BCA0020D01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -52,6 +57,11 @@
 		359534731A4F4BD70020D01E /* SpriteKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SpriteKit.framework; path = System/Library/Frameworks/SpriteKit.framework; sourceTree = SDKROOT; };
 		359534751A4F4DEF0020D01E /* GameScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = GameScene.swift; sourceTree = "<group>"; };
 		359534B01A4F613D0020D01E /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
+		35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = appleBite.mp3; sourceTree = "<group>"; };
+		35B36FDD1A6DBAF90093BBB8 /* App Icon [Squared] */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "App Icon [Squared]"; sourceTree = "<group>"; };
+		35B36FDF1A6DFC880093BBB8 /* apple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apple.mp3; sourceTree = "<group>"; };
+		35B36FE11A6DFF010093BBB8 /* bScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bScene.swift; sourceTree = "<group>"; };
+		35B36FE51A6E09430093BBB8 /* forwardbutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardbutton1.png; sourceTree = "<group>"; };
 		35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		35C43FA81A5CF4DB009ED66B /* apple1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple1.png; sourceTree = "<group>"; };
 		35C43FAA1A5CF7C1009ED66B /* apple.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = apple.atlas; sourceTree = "<group>"; };
@@ -109,9 +119,11 @@
 				359534511A4F4BCA0020D01E /* GameScene.sks */,
 				359534551A4F4BCA0020D01E /* GameViewController.swift */,
 				359534751A4F4DEF0020D01E /* GameScene.swift */,
+				35B36FE11A6DFF010093BBB8 /* bScene.swift */,
 				359534571A4F4BCA0020D01E /* Main.storyboard */,
-				3595345A1A4F4BCA0020D01E /* Images.xcassets */,
 				3595345C1A4F4BCA0020D01E /* LaunchScreen.xib */,
+				35B36FDD1A6DBAF90093BBB8 /* App Icon [Squared] */,
+				355E7D691A64F4E700F60BDD /* Images-2.xcassets */,
 				3595344D1A4F4BCA0020D01E /* Supporting Files */,
 			);
 			path = ChineseBook;
@@ -148,6 +160,7 @@
 				35C43FA81A5CF4DB009ED66B /* apple1.png */,
 				355658F31A57BDB50070170E /* backbutton.png */,
 				355658F41A57BDB50070170E /* backbutton@2x.png */,
+				35B36FE51A6E09430093BBB8 /* forwardbutton1.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -155,7 +168,9 @@
 		35BC8DAC1A4FAE9B00F72F7B /* Sound */ = {
 			isa = PBXGroup;
 			children = (
+				35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */,
 				4E85C20E1A56666900669279 /* ping2guo3.mp3 */,
+				35B36FDF1A6DFC880093BBB8 /* apple.mp3 */,
 			);
 			name = Sound;
 			sourceTree = "<group>";
@@ -209,6 +224,7 @@
 				TargetAttributes = {
 					359534491A4F4BCA0020D01E = {
 						CreatedOnToolsVersion = 6.1;
+						DevelopmentTeam = S594UD6T3P;
 					};
 					359534621A4F4BCA0020D01E = {
 						CreatedOnToolsVersion = 6.1;
@@ -241,13 +257,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				3595345E1A4F4BCA0020D01E /* LaunchScreen.xib in Resources */,
+				35B36FE01A6DFC880093BBB8 /* apple.mp3 in Resources */,
 				4E85C20F1A56666900669279 /* ping2guo3.mp3 in Resources */,
-				3595345B1A4F4BCA0020D01E /* Images.xcassets in Resources */,
 				35C43FA91A5CF4DB009ED66B /* apple1.png in Resources */,
+				35B36FE61A6E09430093BBB8 /* forwardbutton1.png in Resources */,
 				355658F61A57BDB50070170E /* backbutton@2x.png in Resources */,
 				359534521A4F4BCA0020D01E /* GameScene.sks in Resources */,
 				35C43FAB1A5CF7C2009ED66B /* apple.atlas in Resources */,
 				355658F51A57BDB50070170E /* backbutton.png in Resources */,
+				35B36FDE1A6DBAF90093BBB8 /* App Icon [Squared] in Resources */,
+				35B36FDC1A6DB2FF0093BBB8 /* appleBite.mp3 in Resources */,
+				355E7D6A1A64F4E700F60BDD /* Images-2.xcassets in Resources */,
 				359534591A4F4BCA0020D01E /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -267,6 +287,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				359534761A4F4DEF0020D01E /* GameScene.swift in Sources */,
+				35B36FE21A6DFF010093BBB8 /* bScene.swift in Sources */,
 				359534B11A4F613D0020D01E /* MenuScene.swift in Sources */,
 				359534561A4F4BCA0020D01E /* GameViewController.swift in Sources */,
 				359534501A4F4BCA0020D01E /* AppDelegate.swift in Sources */,
@@ -394,9 +415,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ChineseBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Debug;
 		};
@@ -404,9 +428,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				INFOPLIST_FILE = ChineseBook/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 2;
 			};
 			name = Release;
 		};

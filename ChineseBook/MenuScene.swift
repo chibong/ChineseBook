@@ -17,7 +17,7 @@ class MenuScene: SKScene {
 
         override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor.whiteColor()
-        let label = SKLabelNode(text: "Welcome to your first Chinese picture book")
+        let label = SKLabelNode(text: "ABC Chinese Book")
         label.fontColor = UIColor.blackColor()
         label.fontSize = 40
         label.position = CGPoint(x: self.size.width / 2.0,y: self.size.height / 2.0)
