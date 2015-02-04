@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3500CCB01A81F6B500972A22 /* homebutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 3500CCAF1A81F6B500972A22 /* homebutton.png */; };
 		355658F51A57BDB50070170E /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 355658F31A57BDB50070170E /* backbutton.png */; };
 		355658F61A57BDB50070170E /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355658F41A57BDB50070170E /* backbutton@2x.png */; };
 		355E7D6A1A64F4E700F60BDD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355E7D691A64F4E700F60BDD /* Images-2.xcassets */; };
@@ -21,9 +22,9 @@
 		359534B11A4F613D0020D01E /* MenuScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534B01A4F613D0020D01E /* MenuScene.swift */; };
 		35B36FDC1A6DB2FF0093BBB8 /* appleBite.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */; };
 		35B36FDE1A6DBAF90093BBB8 /* App Icon [Squared] in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FDD1A6DBAF90093BBB8 /* App Icon [Squared] */; };
-		35B36FE01A6DFC880093BBB8 /* apple.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FDF1A6DFC880093BBB8 /* apple.mp3 */; };
 		35B36FE21A6DFF010093BBB8 /* bScene.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35B36FE11A6DFF010093BBB8 /* bScene.swift */; };
 		35B36FE61A6E09430093BBB8 /* forwardbutton1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35B36FE51A6E09430093BBB8 /* forwardbutton1.png */; };
+		35B7EB081A6E2C3700999A9D /* appleEnglish.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35B7EB071A6E2C3700999A9D /* appleEnglish.mp3 */; };
 		35BC8DAE1A4FC61A00F72F7B /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */; };
 		35C43FA91A5CF4DB009ED66B /* apple1.png in Resources */ = {isa = PBXBuildFile; fileRef = 35C43FA81A5CF4DB009ED66B /* apple1.png */; };
 		35C43FAB1A5CF7C2009ED66B /* apple.atlas in Resources */ = {isa = PBXBuildFile; fileRef = 35C43FAA1A5CF7C1009ED66B /* apple.atlas */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		3500CCAF1A81F6B500972A22 /* homebutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = homebutton.png; sourceTree = "<group>"; };
 		355658F31A57BDB50070170E /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = SOURCE_ROOT; };
 		355658F41A57BDB50070170E /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = SOURCE_ROOT; };
 		355E7D691A64F4E700F60BDD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
@@ -59,9 +61,9 @@
 		359534B01A4F613D0020D01E /* MenuScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MenuScene.swift; sourceTree = "<group>"; };
 		35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = appleBite.mp3; sourceTree = "<group>"; };
 		35B36FDD1A6DBAF90093BBB8 /* App Icon [Squared] */ = {isa = PBXFileReference; lastKnownFileType = folder; path = "App Icon [Squared]"; sourceTree = "<group>"; };
-		35B36FDF1A6DFC880093BBB8 /* apple.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = apple.mp3; sourceTree = "<group>"; };
 		35B36FE11A6DFF010093BBB8 /* bScene.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = bScene.swift; sourceTree = "<group>"; };
 		35B36FE51A6E09430093BBB8 /* forwardbutton1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = forwardbutton1.png; sourceTree = "<group>"; };
+		35B7EB071A6E2C3700999A9D /* appleEnglish.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = appleEnglish.mp3; sourceTree = "<group>"; };
 		35BC8DAD1A4FC61A00F72F7B /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 		35C43FA81A5CF4DB009ED66B /* apple1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = apple1.png; sourceTree = "<group>"; };
 		35C43FAA1A5CF7C1009ED66B /* apple.atlas */ = {isa = PBXFileReference; lastKnownFileType = folder.skatlas; path = apple.atlas; sourceTree = "<group>"; };
@@ -158,6 +160,7 @@
 			isa = PBXGroup;
 			children = (
 				35C43FA81A5CF4DB009ED66B /* apple1.png */,
+				3500CCAF1A81F6B500972A22 /* homebutton.png */,
 				355658F31A57BDB50070170E /* backbutton.png */,
 				355658F41A57BDB50070170E /* backbutton@2x.png */,
 				35B36FE51A6E09430093BBB8 /* forwardbutton1.png */,
@@ -170,7 +173,7 @@
 			children = (
 				35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */,
 				4E85C20E1A56666900669279 /* ping2guo3.mp3 */,
-				35B36FDF1A6DFC880093BBB8 /* apple.mp3 */,
+				35B7EB071A6E2C3700999A9D /* appleEnglish.mp3 */,
 			);
 			name = Sound;
 			sourceTree = "<group>";
@@ -257,10 +260,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				3595345E1A4F4BCA0020D01E /* LaunchScreen.xib in Resources */,
-				35B36FE01A6DFC880093BBB8 /* apple.mp3 in Resources */,
 				4E85C20F1A56666900669279 /* ping2guo3.mp3 in Resources */,
 				35C43FA91A5CF4DB009ED66B /* apple1.png in Resources */,
 				35B36FE61A6E09430093BBB8 /* forwardbutton1.png in Resources */,
+				3500CCB01A81F6B500972A22 /* homebutton.png in Resources */,
 				355658F61A57BDB50070170E /* backbutton@2x.png in Resources */,
 				359534521A4F4BCA0020D01E /* GameScene.sks in Resources */,
 				35C43FAB1A5CF7C2009ED66B /* apple.atlas in Resources */,
@@ -269,6 +272,7 @@
 				35B36FDC1A6DB2FF0093BBB8 /* appleBite.mp3 in Resources */,
 				355E7D6A1A64F4E700F60BDD /* Images-2.xcassets in Resources */,
 				359534591A4F4BCA0020D01E /* Main.storyboard in Resources */,
+				35B7EB081A6E2C3700999A9D /* appleEnglish.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

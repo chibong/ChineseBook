@@ -11,13 +11,9 @@ import Spritekit
 import AVFoundation
 
 class MenuScene: SKScene {
-        var buttonSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ping2guo3", ofType: "mp3")!)
-        var audioPlayer = AVAudioPlayer()
-    
-
         override func didMoveToView(view: SKView) {
         self.backgroundColor = UIColor.whiteColor()
-        let label = SKLabelNode(text: "ABC Chinese Book")
+        let label = SKLabelNode(text: "Table of contents")
         label.fontColor = UIColor.blackColor()
         label.fontSize = 40
         label.position = CGPoint(x: self.size.width / 2.0,y: self.size.height / 2.0)
