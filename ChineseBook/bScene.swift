@@ -10,6 +10,7 @@ import Spritekit
 import AVFoundation
 
 class bScene: SKScene {
+    
     let textureAtlas = SKTextureAtlas(named:"appleAnim.atlas")
     var spriteArray = Array<SKTexture>()
     var apple: SKSpriteNode!
@@ -22,7 +23,7 @@ class bScene: SKScene {
     let chineseLabel2 = SKLabelNode(text: "自行車")
     let englishLabel2 = SKLabelNode(text: "Bike")
     
-    var buttonSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ping2guo3", ofType: "mp3")!)
+    var ballSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ball", ofType: "mp3")!)
     var biteSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("appleBite", ofType: "mp3")!)
     var appleEnglish = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("appleEnglish", ofType: "mp3")!)
     var audioPlayer = AVAudioPlayer()
@@ -45,6 +46,10 @@ class bScene: SKScene {
     
     
     override func didMoveToView(view: SKView) {
+        
+        var bgImage = SKSpriteNode(imageNamed: "bBackground.jpg")
+        self.addChild(bgImage)
+        bgImage.position = CGPointMake(self.size.width/2, self.size.height/2)
         
         
         self.backgroundColor = UIColor.whiteColor()
@@ -84,7 +89,7 @@ class bScene: SKScene {
         
         
         
-        audioPlayer = AVAudioPlayer(contentsOfURL: buttonSound, error: nil)
+        audioPlayer = AVAudioPlayer(contentsOfURL: ballSound, error: nil)
         audioPlayer.prepareToPlay()
         bitePlayer = AVAudioPlayer(contentsOfURL: biteSound, error: nil)
         bitePlayer.prepareToPlay()

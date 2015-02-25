@@ -11,6 +11,9 @@
 		355658F51A57BDB50070170E /* backbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 355658F31A57BDB50070170E /* backbutton.png */; };
 		355658F61A57BDB50070170E /* backbutton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 355658F41A57BDB50070170E /* backbutton@2x.png */; };
 		355E7D6A1A64F4E700F60BDD /* Images-2.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 355E7D691A64F4E700F60BDD /* Images-2.xcassets */; };
+		35858FCE1A87000F0040819C /* ball.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 35858FCD1A87000F0040819C /* ball.mp3 */; };
+		358EE45C1A9D92D60080C5B1 /* bBackground.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 358EE45B1A9D92D60080C5B1 /* bBackground.jpg */; };
+		358EE4601A9DA9CD0080C5B1 /* airplane2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 358EE45F1A9DA9CD0080C5B1 /* airplane2.jpg */; };
 		359534501A4F4BCA0020D01E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3595344F1A4F4BCA0020D01E /* AppDelegate.swift */; };
 		359534521A4F4BCA0020D01E /* GameScene.sks in Resources */ = {isa = PBXBuildFile; fileRef = 359534511A4F4BCA0020D01E /* GameScene.sks */; };
 		359534561A4F4BCA0020D01E /* GameViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 359534551A4F4BCA0020D01E /* GameViewController.swift */; };
@@ -46,6 +49,9 @@
 		355658F31A57BDB50070170E /* backbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = backbutton.png; sourceTree = SOURCE_ROOT; };
 		355658F41A57BDB50070170E /* backbutton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "backbutton@2x.png"; sourceTree = SOURCE_ROOT; };
 		355E7D691A64F4E700F60BDD /* Images-2.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Images-2.xcassets"; sourceTree = "<group>"; };
+		35858FCD1A87000F0040819C /* ball.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = ball.mp3; sourceTree = "<group>"; };
+		358EE45B1A9D92D60080C5B1 /* bBackground.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bBackground.jpg; sourceTree = "<group>"; };
+		358EE45F1A9DA9CD0080C5B1 /* airplane2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = airplane2.jpg; sourceTree = "<group>"; };
 		3595344A1A4F4BCA0020D01E /* ChineseBook.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ChineseBook.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3595344E1A4F4BCA0020D01E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		3595344F1A4F4BCA0020D01E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -121,6 +127,7 @@
 				359534511A4F4BCA0020D01E /* GameScene.sks */,
 				359534551A4F4BCA0020D01E /* GameViewController.swift */,
 				359534751A4F4DEF0020D01E /* GameScene.swift */,
+				358EE45F1A9DA9CD0080C5B1 /* airplane2.jpg */,
 				35B36FE11A6DFF010093BBB8 /* bScene.swift */,
 				359534571A4F4BCA0020D01E /* Main.storyboard */,
 				3595345C1A4F4BCA0020D01E /* LaunchScreen.xib */,
@@ -159,6 +166,7 @@
 		359534A91A4F55620020D01E /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				358EE45B1A9D92D60080C5B1 /* bBackground.jpg */,
 				35C43FA81A5CF4DB009ED66B /* apple1.png */,
 				3500CCAF1A81F6B500972A22 /* homebutton.png */,
 				355658F31A57BDB50070170E /* backbutton.png */,
@@ -172,6 +180,7 @@
 			isa = PBXGroup;
 			children = (
 				35B36FDB1A6DB2FF0093BBB8 /* appleBite.mp3 */,
+				35858FCD1A87000F0040819C /* ball.mp3 */,
 				4E85C20E1A56666900669279 /* ping2guo3.mp3 */,
 				35B7EB071A6E2C3700999A9D /* appleEnglish.mp3 */,
 			);
@@ -259,17 +268,20 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				358EE45C1A9D92D60080C5B1 /* bBackground.jpg in Resources */,
 				3595345E1A4F4BCA0020D01E /* LaunchScreen.xib in Resources */,
 				4E85C20F1A56666900669279 /* ping2guo3.mp3 in Resources */,
 				35C43FA91A5CF4DB009ED66B /* apple1.png in Resources */,
 				35B36FE61A6E09430093BBB8 /* forwardbutton1.png in Resources */,
 				3500CCB01A81F6B500972A22 /* homebutton.png in Resources */,
 				355658F61A57BDB50070170E /* backbutton@2x.png in Resources */,
+				358EE4601A9DA9CD0080C5B1 /* airplane2.jpg in Resources */,
 				359534521A4F4BCA0020D01E /* GameScene.sks in Resources */,
 				35C43FAB1A5CF7C2009ED66B /* apple.atlas in Resources */,
 				355658F51A57BDB50070170E /* backbutton.png in Resources */,
 				35B36FDE1A6DBAF90093BBB8 /* App Icon [Squared] in Resources */,
 				35B36FDC1A6DB2FF0093BBB8 /* appleBite.mp3 in Resources */,
+				35858FCE1A87000F0040819C /* ball.mp3 in Resources */,
 				355E7D6A1A64F4E700F60BDD /* Images-2.xcassets in Resources */,
 				359534591A4F4BCA0020D01E /* Main.storyboard in Resources */,
 				35B7EB081A6E2C3700999A9D /* appleEnglish.mp3 in Resources */,

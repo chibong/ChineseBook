@@ -21,6 +21,8 @@ class GameScene: SKScene {
     
         let chineseLabel2 = SKLabelNode(text: "飛機")
         let englishLabel2 = SKLabelNode(text: "Airplane")
+        var airplane = SKSpriteNode(imageNamed: "airplane2.jpg")
+
 
         var buttonSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("ping2guo3", ofType: "mp3")!)
         var biteSound = NSURL(fileURLWithPath: NSBundle.mainBundle().pathForResource("appleBite", ofType: "mp3")!)
@@ -34,21 +36,19 @@ class GameScene: SKScene {
         var backButton = SKSpriteNode(imageNamed: "backbutton.png")
         var fwdButton = SKSpriteNode(imageNamed: "forwardbutton1.png")
         var homeButton = SKSpriteNode(imageNamed: "homebutton.png")
-        
-        func swipedRight(sender:UISwipeGestureRecognizer){
-            println("swiped right")
-        }
     
-        func swipedLeft(sender:UISwipeGestureRecognizer){
-        println("swiped left")
-        }
+    
     
     
         override func didMoveToView(view: SKView) {
-            
+
+           
             
             self.backgroundColor = UIColor.whiteColor()
             setupApple()
+        
+            airplane.position = CGPoint(x: self.size.width * 0.25, y: self.size.height * 0.35)
+            self.addChild(airplane)
             
             backButton.position = CGPoint(x: self.size.width * 0.1, y: self.size.height * 0.1)
             backButton.alpha = 1.0//optional
@@ -64,23 +64,35 @@ class GameScene: SKScene {
             
             self.scaleMode = .AspectFill
             
-            letterLabel.fontColor = UIColor.redColor()
+            letterLabel.fontColor = UIColor.blueColor()
             letterLabel.fontSize = 260
             letterLabel.position = CGPoint(x: size.width * 0.20, y: size.height * 0.7)
-            letterLabel.fontName = "AmericanTypewriter"
+            letterLabel.fontName = "Helvetica-Bold"
             self.addChild(letterLabel)
             
-            englishLabel.fontColor = UIColor.redColor()
+            englishLabel.fontColor = UIColor.blueColor()
             englishLabel.fontSize = 40
             englishLabel.position = CGPoint(x: size.width * 0.625, y: size.height * 0.55)
-            englishLabel.fontName = "AmericanTypewriter"
+            englishLabel.fontName = "Helvetica-Bold"
             self.addChild(englishLabel)
             
-            chineseLabel.fontColor = UIColor.redColor()
+            englishLabel2.fontColor = UIColor.blueColor()
+            englishLabel2.fontSize = 40
+            englishLabel2.position = CGPoint(x: size.width * 0.175, y: size.height * 0.20)
+            englishLabel2.fontName = "Helvetica-Bold"
+            self.addChild(englishLabel2)
+            
+            chineseLabel.fontColor = UIColor.blueColor()
             chineseLabel.fontSize = 40
             chineseLabel.position = CGPoint(x: size.width * 0.775, y: size.height * 0.55)
-            chineseLabel.fontName = "AmericanTypewriter"
+            chineseLabel.fontName = "Helvetica-Bold"
             self.addChild(chineseLabel)
+            
+            chineseLabel2.fontColor = UIColor.blueColor()
+            chineseLabel2.fontSize = 40
+            chineseLabel2.position = CGPoint(x: size.width * 0.325, y: size.height * 0.2)
+            chineseLabel2.fontName = "Helvetica-Bold"
+            self.addChild(chineseLabel2)
             
 
             
@@ -93,6 +105,7 @@ class GameScene: SKScene {
             
             let swipeRight:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedRight:"))
             swipeRight.direction = .Right
+            
             view.addGestureRecognizer(swipeRight)
 
             let swipeLeft:UISwipeGestureRecognizer = UISwipeGestureRecognizer(target: self, action: Selector("swipedLeft:"))
@@ -107,26 +120,28 @@ class GameScene: SKScene {
         
         //let animateAction = SKAction.animateWithTextures(self.spriteArray, timePerFrame: 0.20);
 
-        let scaleAction = SKAction.scaleTo(2.0, duration: 0.5)
+        let scaleAction = SKAction.scaleTo(1.5, duration: 0.5)
         let shrinkAction = SKAction.scaleTo(1.0, duration: 0.5)
+        let flyAction = SKAction.moveToX(size.width * 1.4, duration: 0.5)
         let scaleThenReverse = SKAction.sequence([scaleAction, shrinkAction])
         
       
-        func swipedRight(sender:UISwipeGestureRecognizer){
-            println("swiped right")
-            let transition = SKTransition.moveInWithDirection(SKTransitionDirection.Left, duration: 0.5)
-            self.view?.presentScene(menu, transition: transition)
-        }
-        
-        func swipedLeft(sender:UISwipeGestureRecognizer){
-            println("swiped left")
-            
-        }
-        
         for touch: AnyObject in touches {
             // Get the location of the touch in this scene
             let location = touch.locationInNode(self)
             // Check if the location of the touch is within the button's bounds
+            func swipedLeft(sender:UISwipeGestureRecognizer){
+                println("swiped left")
+                let transition = SKTransition.moveInWithDirection(SKTransitionDirection.Right, duration: 0.5)
+                self.view?.presentScene(next, transition: transition)
+                
+            }
+            func swipedRight(sender:UISwipeGestureRecognizer){
+                println("swiped right")
+                let transition = SKTransition.moveInWithDirection(SKTransitionDirection.Left, duration: 0.5)
+                self.view?.presentScene(menu, transition: transition)
+            }
+            
             if apple.containsPoint(location) {
                 apple.runAction(appleBite)
                 bitePlayer.play()
@@ -134,6 +149,11 @@ class GameScene: SKScene {
                 println("tapped!")
 
             }
+            
+            if airplane.containsPoint(location) {
+                airplane.runAction(flyAction)
+            }
+            
             if backButton.containsPoint(location){
                 println("Going Back!")
                 let transition = SKTransition.moveInWithDirection(SKTransitionDirection.Left, duration: 0.5)
@@ -144,6 +164,7 @@ class GameScene: SKScene {
                 let transition = SKTransition.moveInWithDirection(SKTransitionDirection.Right, duration: 0.5)
                 self.view?.presentScene(next, transition: transition)
             }
+
             if englishLabel.containsPoint(location){
                 englishLabel.runAction(scaleThenReverse)
                 applePlayer.play()
